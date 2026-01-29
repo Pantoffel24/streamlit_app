@@ -7,6 +7,12 @@ import pandas as pd
 bio_text = ""
 datafile = pd.read_csv('MatriarchData.csv')
 
+st.set_page_config(
+    page_title="Stella Research",  # This is the text in the browser tab
+    page_icon="https://img.freepik.com/premium-psd/model-spaceship-with-space-ship-it_911060-119752.jpg",                     # This is the icon (can be an emoji or file path)
+    layout="wide"                       # Optional: Makes the content stretch to full width
+)
+
 with st.sidebar:
     st.title("Christoffel Schoeman") 
     st.write("**Role:** Stellar Vehicle Design and Robotic analysis")
